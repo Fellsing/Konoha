@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Lab1.Angular</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class = "rr">
+            
+            <div class = "reviews">Отзывы: </div>
+            <ol id = "sps"></ol>
+
+
+            <div class = "comment">Оставить комментарий: <br>
+                <form name  = "formT" onsubmit="return false">
+                    <p><b>Укажите Вашу почту:</b><br></p>
+                    <input id = "mail" type="text" size="40">
+                    <p id = "emailError">Укажите Вашу действительную почту</p>
+                    <p><b>Какую оценку Вы дадите данному продукту?</b><br></p>
+                    <input type="radio" name="mark" value="1"> 1<Br>
+                    <input type="radio" name="mark" value="2"> 2<Br>
+                    <input type="radio" name="mark" value="3"> 3<Br>
+                    <input type="radio" name="mark" value="4"> 4<Br>
+                    <input type="radio" name="mark" value="5"> 5<Br>
+                    <p id = "markError"> Обязательно выберите оценку!</p>
+                    <p> Оставьte Ваш комментарий<br></p>
+                    <textarea id = "comm" name="coment" cols="40" rows="3"></textarea>
+                    <p><button class = "submit" onclick ="IsValidForm()">Send</button></p>
+                    <p id = "comentError">Укажите от 3 до 100 символов</p>
+                </form>
+            
+            </div>
+        </header>
+        
+        
+    <script type = "text/javascript" src = "main.js"></script>
+    </body>
+</html>
